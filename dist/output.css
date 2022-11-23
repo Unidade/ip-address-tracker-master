@@ -773,6 +773,11 @@ video {
   filter: hue-rotate(60deg);
 }
 
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mx-auto {
     margin-left: auto;
