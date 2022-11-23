@@ -74,6 +74,7 @@ function getLocationBy(payload) {
       timezoneText.textContent = `UTC ${timezone}`
       locationText.textContent = city
       console.log(isMobile)
+      // compensate latitude to marker appear under menu info
       if (isMobile) {
         map.setView([lat + 0.02, lng], 13)
       } else {
