@@ -4,10 +4,6 @@
 
 @layer components {
   .background {
-    background-image: url('../images/pattern-bg.png');
+    background-image: url('./pattern-bg.png');
   }
-}
-
-.black {
-  filter: hue-rotate(60deg);
 }
