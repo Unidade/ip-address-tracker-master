@@ -13,7 +13,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Overview
 
-This solution make use of tailwindCSS, vanila Javascript and HTML on the frontend. I created a ![web service](https://ipify-x63v.onrender.com) for this project to fetch the necessary data without exposing my personal api key on the frontend.
+This solution make use of tailwindCSS, vanila Javascript and HTML on the frontend. I created a [web service](https://ipify-x63v.onrender.com) for this project to fetch the necessary data without exposing my personal api key on the frontend.
 
 ### The challenge
 
