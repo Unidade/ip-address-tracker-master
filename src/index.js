@@ -2,6 +2,9 @@ import { isIP } from 'is-ip'
 import isValidDomain from 'is-valid-domain'
 import L from 'leaflet'
 
+const isMobile = window.innerWidth <= 640
+console.log(window.innerWidth)
+
 const form = document.querySelector('#form')
 const ipAddressText = document.querySelector('#ipAddress')
 const locationText = document.querySelector('#location')
@@ -70,7 +73,12 @@ function getLocationBy(payload) {
       ispText.textContent = isp
       timezoneText.textContent = `UTC ${timezone}`
       locationText.textContent = city
-      map.setView([lat, lng], 13)
+      console.log(isMobile)
+      if (isMobile) {
+        map.setView([lat + 0.02, lng], 13)
+      } else {
+        map.setView([lat, lng], 13)
+      }
       L.marker([lat, lng], { icon: blackIcon }).addTo(map)
     })
     .catch((e) => console.error(e))
